@@ -4,6 +4,6 @@
 
 Originally developed by me. 
 
-## TO RUn 
+## TO Run 
 * `npm i`
 * `npm run dev`
