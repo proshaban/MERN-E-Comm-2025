@@ -7,3 +7,6 @@ Originally developed by me.
 ## TO Run 
 * `npm i`
 * `npm run dev`
+
+## Test Live 
+[Click Here](hhttps://mern-e-comm.vercel.app/)
