@@ -9,4 +9,4 @@ Originally developed by me.
 * `npm run dev`
 
 ## Test Live 
-[Click Here](hhttps://mern-e-comm.vercel.app/)
+[Click Here](https://mern-e-comm.vercel.app/)
