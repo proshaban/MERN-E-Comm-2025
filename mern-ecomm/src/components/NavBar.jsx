@@ -11,7 +11,7 @@ const NavBar = () => {
                     <p>HOME</p>
                     <hr className='w-2/4 border-t-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
-                <NavLink to="/collection" className='flex flex-col items-center gap-1'>
+                <NavLink to="/collections" className='flex flex-col items-center gap-1'>
                     <p>COLLECTIONS</p>
                     <hr className='w-2/4 border-t-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
@@ -53,8 +53,8 @@ const NavBar = () => {
                     <NavLink onClick={()=>setShowMenu(false)} to="/" className='py-2 pl-6 border-t cursor-pointer'>
                         Home
                     </NavLink>
-                    <NavLink onClick={()=>setShowMenu(false)} to="/collection" className='py-2 pl-6 border-t cursor-pointer'>
-                        Collection
+                    <NavLink onClick={()=>setShowMenu(false)} to="/collections" className='py-2 pl-6 border-t cursor-pointer'>
+                        Collections
                     </NavLink>
                     <NavLink onClick={()=>setShowMenu(false)} to="/about" className='py-2 pl-6 border-t cursor-pointer'>
                         About
