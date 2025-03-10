@@ -8,19 +8,19 @@ const NavBar = () => {
             <Link to='/'><img src={assets.logo} alt='logo' className='w-24' /></Link>
             <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
                 <NavLink to="/" className='flex flex-col items-center gap-1'>
-                    <p>Home</p>
+                    <p>HOME</p>
                     <hr className='w-2/4 border-t-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
                 <NavLink to="/collection" className='flex flex-col items-center gap-1'>
-                    <p>Collection</p>
+                    <p>COLLECTIONS</p>
                     <hr className='w-2/4 border-t-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
                 <NavLink to="/about" className='flex flex-col items-center gap-1'>
-                    <p>About</p>
+                    <p>ABOUT</p>
                     <hr className='w-2/4 border-t-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
                 <NavLink to="/contact" className='flex flex-col items-center gap-1'>
-                    <p>Contact</p>
+                    <p>CONTACT</p>
                     <hr className='w-2/4 border-t-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
             </ul>
