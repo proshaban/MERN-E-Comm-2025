@@ -16,7 +16,10 @@ a.active hr {
     box-sizing: border-box;
     font-family: Outfit, sans-serif;
 }
-
+::-webkit-scrollbar
+{
+    display: none;
+}
 @media (max-width:768px)
 {
     a.active 
