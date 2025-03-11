@@ -5,7 +5,7 @@ export const ShopContext = createContext();
 
 const ShopContextProvider = (props) => {
 
-    const currency = '₹';
+    const currency = '$';
     const deliveryCharge = 50;
     const [showSearch, setShowSearch] = useState(false);
 
