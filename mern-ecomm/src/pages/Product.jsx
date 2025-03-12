@@ -6,7 +6,7 @@ import RelatedProducts from '../components/RelatedProducts';
 
 const Product = () => {
   const { productId } = useParams();
-  const { products, currency } = useContext(ShopContext);
+  const { products, currency , addToCart } = useContext(ShopContext);
   const [productData, setProductData] = useState(null);
   const [size, setSize] = useState('');
   const [image, setImage] = useState('');
@@ -20,8 +20,7 @@ const Product = () => {
       if (product) {
         setProductData(product); // Ensures a fresh copy of the object
         setImage(product.image[0]);
-        setSize('');
-        console.log(product)
+        setSize(product.sizes[0]);
       }
     }
 
@@ -44,7 +43,7 @@ const Product = () => {
       <div className="flex gap-12 sm:gap-12 flex-col sm:flex-row">
         {/* Product Images */}
         <div className="flex flex-1 flex-col-reverse gap-3 sm:flex-row">
-          <div className="flex flex-col sm:overflow-x-auto justify-between sm:justify-normal w-full sm:w-[18.7%]">
+          <div className="flex sm:flex-col overflow-y-auto sm:overflow-x-auto justify-between sm:justify-normal w-full sm:w-[18.7%]">
             {productData.image.map((item, index) => (
               <img
                 onClick={() => setImage(item)}
@@ -91,7 +90,7 @@ const Product = () => {
               ))}
             </div>
           </div>
-          <button className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700">
+          <button onClick={()=>addToCart({ itemId: productData._id, size })} className="bg-black text-white px-8 py-3 text-sm active:bg-gray-700">
             ADD TO CART
           </button>
           <hr className="mt-8 w-4/5" />

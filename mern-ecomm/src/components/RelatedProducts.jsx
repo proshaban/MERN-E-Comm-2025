@@ -8,8 +8,6 @@ const RelatedProducts = ({ category, subCategory }) => {
     const [related, setRelated] = useState([]);
 
     useEffect(() => {
-
-        console.log("==>",category,subCategory)
         if (products.length > 0) {
             const filteredProducts = products.filter(
                 (item) => item.category === category && item.subCategory === subCategory
